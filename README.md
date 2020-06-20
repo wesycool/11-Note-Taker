@@ -14,7 +14,7 @@ Node.js, npm express and heroku install
 Create a heroku app and deploy it.
 Check link for app sample: https://wesycool-note-taker.herokuapp.com/
 
-[![Screenshot]('./screenshot.png')]('https://wesycool-note-taker.herokuapp.com/')
+[![Screenshot](./screenshot.png)](https://wesycool-note-taker.herokuapp.com/)
 
 ## License
 MIT License

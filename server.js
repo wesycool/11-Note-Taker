@@ -19,7 +19,7 @@ app.get('/notes',function(req,res) {
 // GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
 app.get('/api/notes', function(req,res){
     for (const [id,obj] of notesData.entries()){
-        obj.id = id + 1
+        obj.id = id
     }
     saveNote(res)
 })

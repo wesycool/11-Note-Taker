@@ -19,7 +19,7 @@ app.get('/notes',function(req,res) {
 // GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
 app.get('/api/notes', function(req,res){
     for (const [id,obj] of notesData.entries()){
-        obj.id = id
+        obj.id = id + 1
     }
     saveNote(res)
 })
@@ -27,7 +27,7 @@ app.get('/api/notes', function(req,res){
 
 // DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. 
 app.delete('/api/notes/:id', function(req,res){
-    notesData.splice(req.params.id , 1)
+    notesData.splice(req.params.id - 1 , 1)
     saveNote(res)
 })
 
